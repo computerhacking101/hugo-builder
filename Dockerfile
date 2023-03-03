@@ -5,8 +5,8 @@ RUN apt install \
     git \
     openssh-client 
 
-RUN apt install  nodejs npm
-
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&
+RUN apt-get install -y nodejs
  
 
 ENV VERSION 0.111.1
