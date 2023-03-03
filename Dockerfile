@@ -4,8 +4,6 @@ RUN apt install \
     curl \
     git \
     openssh-client 
-
-RUN apt install npm
 RUN apt install nodejs
  
 
