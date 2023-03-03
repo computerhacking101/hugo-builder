@@ -1,13 +1,13 @@
 FROM golang
 
-RUN apk add --no-cache \
+RUN apt install \
     curl \
     git \
     openssh-client \
     rsync \
     curl
 
-RUN apk add --update nodejs npm
+RUN apt install  nodejs npm
 
  
 
