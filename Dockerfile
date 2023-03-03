@@ -5,7 +5,7 @@ RUN apt install \
     git \
     openssh-client 
 
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sh - &&
 RUN apt-get install -y nodejs
  
 
