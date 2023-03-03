@@ -11,7 +11,7 @@ RUN apk add --update nodejs npm
 
 RUN wget https://golang.org/dl/go1.20.1.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
-RUN export PATH=$PATH:/usr/local/go/bin
+RUN ln -s /usr/local/go/bin/go  /usr/local/bin/go   
 
 ENV VERSION 0.111.1
 RUN mkdir -p /usr/local/src 
