@@ -3,6 +3,7 @@ RUN apk add \
     curl \
     git \
     openssh-client 
+RUN apk add build-base
 RUN apk add --update nodejs npm
 
 ENV VERSION 0.111.1
