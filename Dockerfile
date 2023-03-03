@@ -3,9 +3,7 @@ FROM golang
 RUN apt install \
     curl \
     git \
-    openssh-client \
-    rsync \
-    curl
+    openssh-client 
 
 RUN apt install  nodejs npm
 
