@@ -6,7 +6,6 @@ RUN apk add \
 RUN apk add build-base
 RUN apk add --update nodejs npm
 
-ENV VERSION 0.111.1
 RUN mkdir -p /usr/local/src 
 RUN cd /usr/local/src 
 
