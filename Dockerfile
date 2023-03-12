@@ -4,7 +4,7 @@ FROM golang:1.20.2-bullseye
 #    git \
 #    openssh-client 
 # RUN apt install build-base
-RUN apt install  --update nodejs npm
+RUN apt install nodejs npm
 
 RUN mkdir -p /usr/local/src 
 RUN cd /usr/local/src 
