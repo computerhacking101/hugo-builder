@@ -1,9 +1,9 @@
 FROM golang:1.20.2-bullseye
-RUN apt install  \
-    curl \
-    git \
-    openssh-client 
-RUN apt install build-base
+#RUN apt install  \
+#    curl \
+#    git \
+#    openssh-client 
+# RUN apt install build-base
 RUN apt install  --update nodejs npm
 
 RUN mkdir -p /usr/local/src 
