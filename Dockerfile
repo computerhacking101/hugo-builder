@@ -4,7 +4,7 @@ FROM golang:1.20.2-bullseye
 #    git \
 #    openssh-client 
 # RUN apt install build-base
-RUN apt install nodejs npm
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 
 RUN mkdir -p /usr/local/src 
 RUN cd /usr/local/src 
