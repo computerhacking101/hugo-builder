@@ -1,8 +1,5 @@
-FROM golang:1.20.2-bullseye
-#RUN apt install  \
-#    curl \
-#    git \
-#    openssh-client 
+FROM golang:1.20.4-bullseye
+
 # RUN apt install build-base
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt install nodejs
