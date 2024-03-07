@@ -1,4 +1,4 @@
-FROM golang:1.22.0-bullseye
+FROM golang:1.22.1-bullseye
 
 RUN mkdir -p /etc/apt/keyrings
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
