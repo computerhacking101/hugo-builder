@@ -4,6 +4,8 @@ FROM golang:1.22-alpine
 # Set the working directory in the container
 WORKDIR /usr/local/src
 
+RUN apt-get install curl gpg -y --no-install-recommands
+
 # Create directories for Hugo and Node.js
 RUN mkdir -p /etc/apt/keyrings
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
