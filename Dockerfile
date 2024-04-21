@@ -1,4 +1,4 @@
-FROM golang:1.22.2-alpine
+FROM golang:1.22.2-bullseye
 
 RUN mkdir -p /etc/apt/keyrings
 RUN apt install curl gpg -y
