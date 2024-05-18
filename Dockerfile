@@ -8,6 +8,6 @@ RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesourc
 RUN apt update  && apt install -y ca-certificates curl gnupg nodejs --no-install-recommends
 
 
-RUN wget https://github.com/gohugoio/hugo/releases/download/v0.126.1/hugo_extended_0.126.1_linux-amd64.deb
-RUN dpkg -i hugo_extended_0.126.1..1_linux-amd64.deb
+RUN curl https://github.com/gohugoio/hugo/releases/download/v0.126.1/hugo_extended_0.126.1_linux-amd64.deb & dpkg -r hugo_extended_0.*
+
 
