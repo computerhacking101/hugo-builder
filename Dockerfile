@@ -1,5 +1,5 @@
 
-FROM golang:1.22.3-bullseye
+FROM golang:bookworm
 
 RUN mkdir -p /etc/apt/keyrings \
     && apt-get update \
